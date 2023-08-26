@@ -18,6 +18,12 @@
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
-    }
+    },
+    {
+      "source": "/https://vercel-api-rose-two.vercel.app/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    }  
 ]
 }
