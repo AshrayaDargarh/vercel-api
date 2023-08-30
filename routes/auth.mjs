@@ -4,7 +4,7 @@ export const authRouter=express.Router()
 authRouter
 .post('/signUp',signUp)
 .post('/login',login)
-.post('/forgot-password',forgotPassword)
+.post('/forgot-password',forgotPassword) 
 .post('/reset-password/:token',resetPassword)
 .post('/verify/:token',verifyEmail)
 .post('/manually-verify',manuallyVerifyEmail)
