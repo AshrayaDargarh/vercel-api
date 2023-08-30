@@ -35,7 +35,7 @@ const auth=(req,res,next)=>{
     {
         res.sendStatus(401)
     }
-}
+} 
 // middleware
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
