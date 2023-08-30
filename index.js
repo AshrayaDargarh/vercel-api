@@ -47,7 +47,7 @@ app.use('/view',auth,viewRouter)
 app.use('/user',auth,userRouter)
 app.use('/public-access',publicRouter) 
 app.get('*', (req, res) =>
-  res.sendFile(path.resolve('build', 'index.html'))
+  res.sendFile(path.resolve('dist', 'index.html'))
 );
 
 app.get("/",(req,res)=>{
