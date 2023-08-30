@@ -39,7 +39,7 @@ const auth=(req,res,next)=>{
 // middleware
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-app.use(express.static(path.resolve(__dirname, 'build')));
+app.use(express.static(path.resolve(__dirname,'dist')));
 app.use(json())
 app.use(cors())
 app.use('/auth',authRouter)
