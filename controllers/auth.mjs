@@ -21,7 +21,7 @@ async function sendVerifyMail(user,email,token)
             text:`Hello ${user}, You are receiving this mail to verify your account because you (or someone else) wants to created your account on SnippetSwap.\n\n` +
             `If you did not request this, please ignore this email.\n`+
             `Otherwise click on the following link, or paste this into your browser to complete the process:\n` +
-            `${process.env.HOST_URL}/auth/verify/${token}\n\n` 
+            `${process.env.HOST_URL}/auth/verifyFront/${token}\n\n` 
         }
         transporter.sendMail(mailOptions,(error,response)=>{
             if(error)
@@ -158,7 +158,7 @@ export const forgotPassword=async(req,res)=>{
             subject:'Password Reset Request',
             text:`You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n` +
             `Please click on the following link, or paste this into your browser to complete the process:\n\n` +
-            `${process.env.HOST_URL}/auth/reset-password/${token}\n\n` +
+            `${process.env.HOST_URL}/auth/reset-passwordFront/${token}\n\n` +
             `If you did not request this, please ignore this email and your password will remain unchanged.\n`,
         }
         transporter.sendMail(mailOptions,(error,response)=>{
